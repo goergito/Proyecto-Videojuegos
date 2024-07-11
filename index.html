@@ -12,11 +12,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fdecda;
+            color: #000; /* Asegura que el texto sea visible en el fondo crema */
+        }
+
+        .bg-dark {
+            background-color: #fdecda !important;
+        }
+
+        .text-white {
+            color: #000 !important;
+        }
+
+        .navbar-dark .navbar-title h1 {
+            color: #000;
+        }
+
+        .list-group-item {
+            background-color: #fdecda;
+            color: #000;
+        }
+
+        .sidebar-heading {
+            color: #000;
+        }
+
+        .btn-dark {
+            background-color: #fdecda;
+            color: #000;
+        }
+
+        .border-right {
+            border-right: 1px solid #000;
+        }
+
+        #page-content-wrapper {
+            margin: 0 100px; /* Ajusta este valor según sea necesario */
+        }
+
+        @media (max-width: 768px) {
+            #page-content-wrapper {
+                margin: 0; /* Elimina el margen en pantallas pequeñas */
+            }
+        }
+    </style>
 </head>
-<body class="dark-mode" >
+<body class="dark-mode">
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
-        <div class="bg-dark border-right dark-mode" id="sidebar-wrapper" style="width: 150px;">
+        <div class="bg-dark border-right dark-mode" id="sidebar-wrapper" style="width: 100px;">
             <div class="sidebar-heading text-white"></div>
             <div class="list-group list-group-flush" style="flex-grow: 1; overflow-y: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 20px;">
                 <a href="https://github.com/goergito" alt="goergito" style="text-decoration:none; display: flex; align-items: center;">
@@ -51,7 +97,7 @@
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
-        <div id="page-content-wrapper">
+        <div id="page-content-wrapper" style="margin: 0 100px;">
 
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom dark-mode">
                 <div class="navbar-body">
