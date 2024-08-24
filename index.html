@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-     <style>
+<style>
         .section-title {
             color: blue;
             margin-top: 2rem;
@@ -23,28 +23,23 @@
         .section-item {
             margin-top: 1rem;
         }
-       #wrapper {
+        #wrapper {
             display: flex;
         }
 
         #sidebar-wrapper {
-            width: 230px; /* Ajusta el ancho según tu necesidad */
+            width: 215px; /* Ajusta el ancho según tu necesidad */
             background-color: #343a40; /* Color de fondo oscuro */
-        }
-
-        .list-group {
-            display: block; /* Mantén el display en block para alinear verticalmente los elementos */
-            margin: 0;
-            padding: 0;
-            list-style-type: none; /* Elimina puntos de lista si hay */
+            height: 100vh; /* Ocupa toda la altura de la ventana */
         }
 
         .list-group-item {
             display: block; /* Asegura que cada elemento se muestre en una línea separada */
-            width: 100%; /* Asegura que ocupen todo el ancho del contenedor */
+            width: 90%; /* Asegura que ocupen todo el ancho del contenedor */
             text-align: left; /* Alinea el texto a la izquierda */
             color: white; /* Color del texto */
             font-size: 0.9rem; /* Tamaño de la fuente */
+            text-decoration: none; /* Elimina subrayados de los enlaces */
         }
 
         .list-group-item-action:hover {
@@ -72,6 +67,12 @@
             max-width: 100%;
             height: auto;
         }
+        /* CSS para ajustar el tamaño de la pantalla */
+        #page-content-wrapper {
+            flex: 1;
+            max-width: 1700px; /* Cambia el valor según lo que necesites */
+        }
+         
     </style>
 </head>
 
