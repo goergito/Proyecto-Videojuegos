@@ -23,20 +23,59 @@
         .section-item {
             margin-top: 1rem;
         }
+       #wrapper {
+            display: flex;
+        }
+
+        #sidebar-wrapper {
+            width: 230px; /* Ajusta el ancho según tu necesidad */
+            background-color: #343a40; /* Color de fondo oscuro */
+        }
+
+        .list-group {
+            display: block; /* Mantén el display en block para alinear verticalmente los elementos */
+            margin: 0;
+            padding: 0;
+            list-style-type: none; /* Elimina puntos de lista si hay */
+        }
+
+        .list-group-item {
+            display: block; /* Asegura que cada elemento se muestre en una línea separada */
+            width: 100%; /* Asegura que ocupen todo el ancho del contenedor */
+            text-align: left; /* Alinea el texto a la izquierda */
+            color: white; /* Color del texto */
+            font-size: 0.9rem; /* Tamaño de la fuente */
+        }
+
+        .list-group-item-action:hover {
+            background-color: #495057; /* Cambia el color de fondo al pasar el mouse */
+        }
+
+        .navbar-body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+        }
+
+        .navbar-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-names {
+            display: flex;
+            gap: 30px;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
-<body class="dark-mode">
-    <div class="d-flex" id="wrapper">
-        <!-- Sidebar Left -->
-        <div class="sidebar-wrapper bg-plomo border-right dark-mode">
-            <div class="sidebar-heading text-white"></div>
-            <div class="list-group list-group-flush" style="flex-grow: 1; overflow-y: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 10px;">
-                <!-- Barra lateral izquierda vacía -->
-            </div>
-        </div>
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper" style="flex: 1;">
+<div id="page-content-wrapper" style="flex: 1;">
 
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom dark-mode">
                 <div class="navbar-body" style="display: flex; justify-content: space-between; align-items: center; width: 80%;">
@@ -66,9 +105,34 @@
                     </div>
                 </div>
             </nav>
-
+    
+<body class="dark-mode">
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar Left -->
+    <div class="bg-dark border-right dark-mode" id="sidebar-wrapper">
+        <div class="sidebar-heading text-white"></div>
+        <div class="list-group list-group-flush" style="flex-grow: 1; overflow-y: auto;">
+            <a href="#home" class="list-group-item list-group-item-action bg-dark text-white">INICIO</a>
+            <a href="#IdeacionV1" class="list-group-item list-group-item-action bg-dark text-white">IDEACIÓN - VERSIÓN 1</a>
+            <a href="#IdeacionV2" class="list-group-item list-group-item-action bg-dark text-white">IDEACIÓN - VERSIÓN 2</a>
+            <a href="#PROTO_NO_FUNC" class="list-group-item list-group-item-action bg-dark text-white">PROTOTIPOS NO FUNCIONALES QUE SON CANDIDATAS A IMPLEMENTAR</a>
+            <a href="#FIGMA_ECO_CONS" class="list-group-item list-group-item-action bg-dark text-white">FIGMA - ECO CONSTRUCTOR</a>
+            <a href="#FIGMA_FOR_ADVE" class="list-group-item list-group-item-action bg-dark text-white">FIGMA - FOREST ADVENTURE</a>
+            <a href="#TECNO_HERR" class="list-group-item list-group-item-action bg-dark text-white">TECNOLOGÍAS Y HERRAMIENTAS UTILIZADAS</a>
+            <a href="#ARQUITECTURA" class="list-group-item list-group-item-action bg-dark text-white">ARQUITECTURA GENERAL DEL SISTEMA</a>
+            <a href="#DIAGRAMA" class="list-group-item list-group-item-action bg-dark text-white">DIAGRAMA DE ARQUITECTURA GENERAL</a>
+            <a href="#CRONOGRAMA" class="list-group-item list-group-item-action bg-dark text-white">CRONOGRAMA PARA EL DESARROLLO DE PROTOTIPO</a>
+            <a href="#PLAYTESTING" class="list-group-item list-group-item-action bg-dark text-white">PLAYTESTING</a>
+        </div>
+    </div>
+<style>
+    .list-group-item {
+        font-size: 0.9rem;
+    }
+</style>
+</div>
             <div class="container-fluid">
-                <section id="home" style="margin-top: 0 !important;">
+                <section id="home">
                     <table class="responsive-table" style="width: 100%; table-layout: fixed;">
                         <tr>
                             <td style="vertical-align: middle; padding-right: 20px;">
@@ -81,8 +145,8 @@
                         </tr>
                     </table>
                 </section>
-                <section id="about" style="margin-top: 1.25 rem !important;">
-                    <h2>Ideación - Versión 1</h2>
+                <section id="IdeacionV1">
+                    <h2>IDEACIÓN - VERSIÓN 1</h2>
                     <table class="responsive-table" style="width: 100%; table-layout: fixed;">
                         <tr>
                             <td style="width: 100%; vertical-align: middle; display: flex; justify-content: center; align-items: center; text-align-last: center;">
@@ -187,8 +251,8 @@
                         </tr>
                     </table>
                 </section>
-                <section id="about" style="margin-top: 1.25 rem !important;">
-                    <h6>Ideación - Versión 2</h6>
+                 <section id="IdeacionV2">
+                    <h6>IDEACIÓN - VERSIÓN 2 2</h6>
                     <table class="responsive-table" style="width: 100%; table-layout: fixed;">
                         <tr>
                             <td style="width: 100%; vertical-align: middle; display: flex; justify-content: center; align-items: center; text-align-last: center;">
@@ -418,8 +482,7 @@
                         </tr>
                     </table>
                 </section>
-                <section id="about" style="margin-top: 1.25 rem !important;">
-                    
+                    <section id="PROTO_NO_FUNC">
                     <h12 id="juegos">PROTOTIPOS NO FUNCIONALES QUE SON CANDIDATAS A IMPLEMENTAR </h12>
                     <p>IDEA 1 </p>
                     <table class="responsive-table" style="width: 100%; table-layout: fixed;">
@@ -442,7 +505,7 @@
                             </td>
                         </tr>
                     </table>
-                        
+                 <section id="FIGMA_ECO_CONS">       
                 <h13 style="color: blue; text-align: center; display: block;">FIGMA - ECO CONSTRUCTOR</h13>
 <table class="responsive-table" style="width: 100%; table-layout: fixed;">
     <p>**ECO CONSTRUCTOR** es un juego divertido diseñado para introducir y fortalecer el conocimiento de los elementos de la naturaleza en los niños. Los jugadores explorarán diferentes biomas infantiles llenos de animales, árboles y otros elementos naturales. En cada nivel, que representa un bioma diferente, el aventurero deberá seleccionar los elementos faltantes para completar el escenario. Cada bioma incluye elementos sonoros y proporciona indicaciones a través de un ayudante, ya sea de forma escrita o enunciada, para guiar a los jugadores en su aventura.</p>
@@ -481,6 +544,7 @@
 <p>NIVEL 4:ZONA MONTAÑOSA</p>
 <p>El último nivel se sitúa en una zona montañosa. Los niños deben identificar y seleccionar los elementos correctos que completan este paisaje natural. Este nivel educa a los niños sobre los animales y plantas que habitan en las montañas y las características de este ecosistema.</p>
                         
+<section id="FIGMA_FOR_ADVE">                        
 <h13 style="color: blue; text-align: center; display: block;">FIGMA - FOREST ADVENTURE</h13>
 <table class="responsive-table" style="width: 100%; table-layout: fixed;">
     <p>"BOSQUE AVENTURA" es un juego educativo interactivo diseñado para enseñar a los niños sobre la naturaleza y los animales a través de diferentes actividades y niveles. Cada nivel está estructurado para fomentar el aprendizaje mediante el juego, ofreciendo retroalimentación continua y motivación.</p>
@@ -535,6 +599,8 @@
 <p>NIVEL 3: ESCRITURA DEL NOMBRE DE ANIMALES POR SONIDO E IMAGEN</p>
 <p>En el nivel final, los jugadores deben escribir el nombre del animal basado en su sonido y una imagen proporcionada. Esta actividad combina habilidades auditivas y visuales con habilidades de escritura, ayudando a los niños a aprender la ortografía correcta de los nombres de los animales. La retroalimentación y los intentos repetidos fomentan la práctica y la memorización.</p>
 <section id="tecnologias" class="section-content">
+    
+    <section id="TECNO_HERR"> 
     <h2 class="section-title">TECNOLOGÍAS Y HERRAMIENTAS UTILIZADAS</h2>
     <p>1. Unity 3D</p>
     <p>Hemos elegido Unity para el desarrollo de nuestro videojuego debido a su flexibilidad y potencia en la creación de gráficos 2D. Unity es ampliamente reconocido por su capacidad para manejar proyectos de diferentes tamaños y complejidades, además de ofrecer una gran cantidad de recursos educativos y una comunidad activa. Estas características facilitan tanto el aprendizaje como la resolución de problemas, lo que es crucial para nuestro equipo de desarrollo.</p>
@@ -543,7 +609,7 @@
     <p>3. GitHub</p>
     <p>GitHub será utilizado para visualizar el diseño del juego en un formato de página web, proporcionando un entorno cómodo para trabajar y observar el progreso del proyecto. Contamos con un portafolio en GitHub que tomaremos como referencia, facilitando la colaboración y manteniendo un historial detallado de todos los cambios realizados. Esto asegura que podamos trabajar en paralelo sin conflictos y revertir cambios cuando sea necesario, además de permitir la revisión de código y la integración continua.</p>
 </section>
-<section id="tecnologias" class="section-content">
+<section id="ARQUITECTURA"> 
 <h2 class="section-title">ARQUITECTURA GENERAL DEL SISTEMA</h2>
         <tr>
         <td class="img-td" style="width: 60%; vertical-align: middle; text-align-last: center;">
@@ -563,7 +629,7 @@
 <p> 5. Guardado de datos: ¿Qué es?: </p>
 <p> Dónde y cómo se guarda la información del juego, Ejemplos. Guardar el progreso del jugador, configuraciones.</p>
      
-<section id="Diagrama" class="section-content">
+<section id="DIAGRAMA"> 
     <h2 class="section-title">DIAGRAMA DE ARQUITECTURA GENERAL</h2>
     <div class="img-td" style="width: 60%; vertical-align: middle; text-align: center;">
         <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/diagrama-arquitectura.png" style="width: 30%; height: auto;" alt="DIAGRAMA">
@@ -587,7 +653,7 @@
     <p>Progreso del Juego: Guardar y cargar el estado del juego para continuar más tarde.</p>
     <p>Configuraciones: Guardar preferencias del jugador, como el volumen del sonido o controles personalizados.</p>
 </section>
-<section id="Cronograma" class="section-content">
+<section id="CRONOGRAMA"> 
     <h2 class="section-title">CRONOGRAMA PARA EL DESARROLLO DE PROTOTIPO</h2>
          <tr>
             <td class="img-td" style="width: 60%; vertical-align: middle; text-align-last: center;">
@@ -605,6 +671,7 @@
     <p>SEMANA 4: </p>
     <p>La cuarta semana se dedicará a la integración completa de sonidos, de las escenas de las secciones del juego y que den retroalimentación inmediata al jugador al realizar una acción correcta o incorrecta en el juego. Además, se llevarán a cabo pruebas exhaustivas para identificar cualquier área de mejora en la jugabilidad, optimizando la experiencia del usuario.	</p>
 <section>
+    <section id="PLAYTESTING"> 
     <h2 class="section-title">PLAYTESTING</h2>
     <tr>
         <td class="img-td" style="width: 60%; vertical-align: middle; text-align-last: center;">
