@@ -91,23 +91,11 @@
     gap: 10px; /* Ajusta el espacio entre los elementos según sea necesario */
 }
 
-.section-item:nth-child(1) {
-    grid-column: 1 / 2;
-}
-
-.section-item:nth-child(2) {
-    grid-column: 2 / 3;
-}
-
-.section-item:nth-child(3) {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-}
-
 .section-item img {
-    width: 100%;
-    height: auto;
-    border: 2px solid black; /* Ajusta el borde según sea necesario */
+    width: 300px; /* Ancho fijo para todas las imágenes */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que siempre cubra el área */
+    border: 2px solid black; /* Borde negro alrededor de las imágenes */
 }
 
     </style>
@@ -758,7 +746,7 @@
     <p>3. No tuvimos problemas mayores, aunque noté que mi hijo se sentía un poco frustrado al tener que escribir los nombres en el tercer nivel. Parecía que las teclas eran un poco pequeñas para sus dedos, lo que le hizo cometer algunos errores.</p>
     <p>4. Sí, ahora mi hijo puede identificar varios animales por su sonido, lo que antes no podía hacer. Ha sido una forma divertida de aprender para él, y eso es lo que más aprecio del juego.</p>
     <p>5. Sugeriría una opción de "autocompletar" en el tercer nivel, para que los niños no se sientan tan presionados a escribir perfectamente desde el principio. Esto podría mantener el aprendizaje divertido sin que se sientan frustrados.</p>
-
+   
     <section id="screenshots">
         <div class="screenshots-container">
             <div class="section-item">
@@ -772,6 +760,7 @@
             </div>
         </div>
     </section>
+
 
     <section id="LINK">
         <h2 class="section-title">HOMEPAGE FOREST ADVENTURE</h2>
